@@ -5,7 +5,7 @@ body {
     width: 100vw;
 
     display: flex;
-    background-color: rgb(230, 225, 225);
+    background-color: rgb(250, 250, 250);
 }
 
 /* Sidebar */
@@ -86,12 +86,29 @@ main {
     padding: 2.5rem;
 }
 
+/* Intro */
+
+.intro p {
+    font-weight: 600;
+    font-size: 1.6rem;
+    max-width: 50rem;
+}
+
 /* Form */
 
 .form {
     background-color: #FFFFFF;
     width: 100%;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
+    padding-top: 0;
+}
+
+.form p {
+    padding-top: 0;
+    margin-bottom: 0;
+
+    font-weight: 600;
+    font-size: 1.4rem;
 }
 
 form > div {
@@ -104,11 +121,43 @@ form > div > div {
     flex-direction: column;
 }
 
+form label {
+    color: #525050;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    padding-bottom: 0.1rem;
+    margin-top: 1.5rem;
+}
+
+form input {
+    background-color: rgb(251, 251, 251);
+
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+
+    min-height: 1.75rem;
+    padding: 0.25rem 0.5rem;
+}
+
+form input:focus {
+    outline: transparent;
+    border: 1.5px solid rgb(49, 98, 233);
+    box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.25);
+}
+
+form input:invalid {
+    border-color: red;
+}
+
 /* Create account */
 
 .create-account button {
     color: rgb(252, 244, 244);
-    background-color: #8f9334;
+    background-color: #596D48;
 
     padding: 0.8rem 2.5rem;
 
@@ -118,8 +167,12 @@ form > div > div {
     font-weight: 600;
 }
 
+.create-account p {
+    margin-top: 2rem;
+}
+
 .create-account a {
     text-decoration: none;
-    color: #8f9334;
+    color: #596D48;
     font-weight: 600;
 }
