@@ -75,4 +75,51 @@ body {
 main {
     width: 70%;
     height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.intro, .form, .create-account {
+    padding: 2.5rem;
+}
+
+/* Form */
+
+.form {
+    background-color: #FFFFFF;
+    width: 100%;
+    box-shadow: 5px 5px 5px black;
+}
+
+form > div {
+    display: flex;
+    gap: 5rem;
+}
+
+form > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Create account */
+
+.create-account button {
+    color: rgb(252, 244, 244);
+    background-color: #8f9334;
+
+    padding: 0.8rem 2.5rem;
+
+    border: none;
+    border-radius: 0.5rem;
+
+    font-weight: 600;
+}
+
+.create-account a {
+    text-decoration: none;
+    color: #8f9334;
+    font-weight: 600;
 }
